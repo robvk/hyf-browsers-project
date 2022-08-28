@@ -12,6 +12,10 @@
   overflow: auto;
 }
 
+.answer {
+  cursor: pointer;
+}
+
 ul {
   list-style: none;
 }
