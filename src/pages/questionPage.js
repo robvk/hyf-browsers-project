@@ -23,6 +23,11 @@ export const initQuestionPage = () => {
 
   for (const [key, answerText] of Object.entries(currentQuestion.answers)) {
     const answerElement = createAnswerElement(key, answerText);
+    answerElement.addEventListener('click', function () {
+      currentQuestion.selected = key;
+      setTimeout(nextQuestion, 1000);
+    });
+
     answersListElement.appendChild(answerElement);
   }
 
@@ -32,7 +37,7 @@ export const initQuestionPage = () => {
 };
 
 const nextQuestion = () => {
-  quizData.currentQuestionIndex = quizData.currentQuestionIndex + 1;
+  quizData.currentQuestionIndex++;
 
   initQuestionPage();
 };
