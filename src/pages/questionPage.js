@@ -23,22 +23,21 @@ export const initQuestionPage = () => {
 
   for (const [key, answerText] of Object.entries(currentQuestion.answers)) {
     const answerElement = createAnswerElement(key, answerText);
-    answerElement.addEventListener('click', function (){
+    answerElement.addEventListener('click', function () {
       currentQuestion.selected = key;
-      answerElement.classList.add('Chosen'); 
-     setTimeout(nextQuestion,1000)
+      setTimeout(nextQuestion, 1000);
     });
+
     answersListElement.appendChild(answerElement);
   }
 
   document
-  .getElementById(NEXT_QUESTION_BUTTON_ID)
-  .addEventListener('click',nextQuestion);
+    .getElementById(NEXT_QUESTION_BUTTON_ID)
+    .addEventListener('click', nextQuestion);
 };
 
 const nextQuestion = () => {
-quizData.currentQuestionIndex ++
+  quizData.currentQuestionIndex++;
 
-initQuestionPage();
-
+  initQuestionPage();
 };
