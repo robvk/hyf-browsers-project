@@ -1,13 +1,16 @@
+import { USER_INTERFACE_ID } from '../constants.js';
+import { getNumberOfCorrectAnswers, quizData } from '../data.js';
 
-import { quizData } from '../data.js';
+export const initReviewPage = () => {
+  const userInterface = document.getElementById(USER_INTERFACE_ID);
+  userInterface.innerHTML = '';
 
-export const reviewResult=()=>{
-    const element = document.createElement('div')
+  const element = document.createElement('div');
 
-    if(quizData.currentQuestionIndex > quizData.questions.length-1){
-        element.innerHTML=`Quiz is completed`
+  element.innerHTML = `<h1>Quiz is completed </h1>
+    <h2> You got ${getNumberOfCorrectAnswers()} of ${
+    quizData.questions.length
+  } question correct </h2>`;
 
-    }
-return element    
-
-}
+  userInterface.appendChild(element);
+};
