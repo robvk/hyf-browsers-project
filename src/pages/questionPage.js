@@ -8,8 +8,15 @@ import {
 import { createQuestionElement } from '../views/questionView.js';
 import { createAnswerElement } from '../views/answerView.js';
 import { quizData } from '../data.js';
+import { initReviewPage } from './reviewPage.js';
 
 export const initQuestionPage = () => {
+  if (quizData.currentQuestionIndex + 1 > quizData.questions.length) {
+    initReviewPage();
+
+    return false;
+  }
+
   const userInterface = document.getElementById(USER_INTERFACE_ID);
   userInterface.innerHTML = '';
 
@@ -25,7 +32,8 @@ export const initQuestionPage = () => {
     const answerElement = createAnswerElement(key, answerText);
     answerElement.addEventListener('click', function () {
       currentQuestion.selected = key;
-      setTimeout(nextQuestion, 1000);
+
+      nextQuestion();
     });
 
     answersListElement.appendChild(answerElement);
