@@ -21,6 +21,8 @@ export const getNumberOfCorrectAnswers = () => {
 
 export const quizData = {
   currentQuestionIndex: 0,
+  counter: undefined,
+
   // the questions in the quiz
   questions: [
     {

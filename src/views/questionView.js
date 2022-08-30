@@ -4,6 +4,7 @@ import { ANSWERS_LIST_ID } from '../constants.js';
 import { NEXT_QUESTION_BUTTON_ID } from '../constants.js';
 import { quizData } from '../data.js';
 
+
 /**
  * Create a full question element
  * @returns {Element}
@@ -13,6 +14,7 @@ export const createQuestionElement = (question) => {
 
   // I use String.raw just to get fancy colors for the HTML in VS Code.
   element.innerHTML = String.raw`
+    <div id='timer'> </div>
     <h2 class='counter'>Question ${quizData.currentQuestionIndex + 1} / ${
     quizData.questions.length
   }</h2>

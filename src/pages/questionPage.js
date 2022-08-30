@@ -9,6 +9,7 @@ import { createQuestionElement } from '../views/questionView.js';
 import { createAnswerElement } from '../views/answerView.js';
 import { quizData } from '../data.js';
 import { initReviewPage } from './reviewPage.js';
+import { countDown } from '../views/timerView.js';
 
 export const initQuestionPage = () => {
   if (quizData.currentQuestionIndex + 1 > quizData.questions.length) {
@@ -23,9 +24,11 @@ export const initQuestionPage = () => {
   const currentQuestion = quizData.questions[quizData.currentQuestionIndex];
 
   const questionElement = createQuestionElement(currentQuestion.text);
-
+  clearInterval(quizData.counter);
   userInterface.appendChild(questionElement);
-
+  countDown(() => {
+    nextQuestion();
+  });
   const answersListElement = document.getElementById(ANSWERS_LIST_ID);
 
   for (const [key, answerText] of Object.entries(currentQuestion.answers)) {
@@ -46,6 +49,6 @@ export const initQuestionPage = () => {
 
 const nextQuestion = () => {
   quizData.currentQuestionIndex++;
-
   initQuestionPage();
+  countDown();
 };
