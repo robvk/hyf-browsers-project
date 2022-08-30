@@ -10,6 +10,7 @@ import { createAnswerElement } from '../views/answerView.js';
 import { quizData } from '../data.js';
 import { initReviewPage } from './reviewPage.js';
 import { countDown } from '../views/timerView.js';
+import { showScore } from '../views/scoreView.js';
 
 export const initQuestionPage = () => {
   if (quizData.currentQuestionIndex + 1 > quizData.questions.length) {
@@ -26,6 +27,7 @@ export const initQuestionPage = () => {
   const questionElement = createQuestionElement(currentQuestion.text);
   clearInterval(quizData.counter);
   userInterface.appendChild(questionElement);
+  showScore();
   countDown(() => {
     nextQuestion();
   });
@@ -36,7 +38,7 @@ export const initQuestionPage = () => {
     answerElement.addEventListener('click', function () {
       currentQuestion.selected = key;
 
-      nextQuestion();
+      //nextQuestion();
     });
 
     answersListElement.appendChild(answerElement);
