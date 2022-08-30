@@ -20,6 +20,13 @@ ul {
   list-style: none;
 }
 
-.counter{
-  color:blue;  
+.counter {
+  color: blue;
+}
+
+.correct {
+  color: green;
+}
+.wrong {
+  color: red;
 }
