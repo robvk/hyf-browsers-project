@@ -50,5 +50,4 @@ export const initQuestionPage = () => {
 const nextQuestion = () => {
   quizData.currentQuestionIndex++;
   initQuestionPage();
-  countDown();
 };
