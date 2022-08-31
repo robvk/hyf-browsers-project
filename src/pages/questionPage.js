@@ -37,7 +37,10 @@ export const initQuestionPage = () => {
     answerElement.addEventListener('click', function () {
       currentQuestion.selected = key;
 
-      nextQuestion();
+      if (currentQuestion.selected == currentQuestion.correct) {
+        showScore();
+      }
+      setTimeout(nextQuestion, 1000);
     });
 
     answersListElement.appendChild(answerElement);
