@@ -15,7 +15,6 @@ import { showScore } from '../views/scoreView.js';
 export const initQuestionPage = () => {
   if (quizData.currentQuestionIndex + 1 > quizData.questions.length) {
     initReviewPage();
-
     return false;
   }
 
@@ -38,7 +37,7 @@ export const initQuestionPage = () => {
     answerElement.addEventListener('click', function () {
       currentQuestion.selected = key;
 
-      //nextQuestion();
+      nextQuestion();
     });
 
     answersListElement.appendChild(answerElement);
