@@ -34,12 +34,20 @@ export const initQuestionPage = () => {
 
   for (const [key, answerText] of Object.entries(currentQuestion.answers)) {
     const answerElement = createAnswerElement(key, answerText);
+    console.log(answerElement);
     answerElement.addEventListener('click', function () {
       currentQuestion.selected = key;
 
-      if (currentQuestion.selected == currentQuestion.correct) {
+      if (key == currentQuestion.correct) {
         showScore();
+        document.getElementById(`answer-${key}`).classList.add('green');
+      } else {
+        document.getElementById(`answer-${key}`).classList.add('red');
+        document
+          .getElementById(`answer-${currentQuestion.correct}`)
+          .classList.add('green');
       }
+
       setTimeout(nextQuestion, 1000);
     });
 
