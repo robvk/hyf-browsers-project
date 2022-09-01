@@ -5,6 +5,7 @@ import {
   BOTTOM_ANSWERS_LIST_ID,
   ANSWERS_LIST_ID,
   TIMER_ID,
+  SCORE_ID,
 } from '../constants.js';
 import { NEXT_QUESTION_BUTTON_ID } from '../constants.js';
 import { quizData } from '../data.js';
