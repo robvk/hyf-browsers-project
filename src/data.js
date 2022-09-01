@@ -11,13 +11,7 @@
     not by your listeners
 */
 
-export const getNumberOfCorrectAnswers = () => {
-  const correctQuestions = quizData.questions.filter((question) => {
-    return question.correct === question.selected;
-  });
 
-  return correctQuestions.length;
-};
 
 export const quizData = {
   currentQuestionIndex: 0,

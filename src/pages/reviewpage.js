@@ -1,5 +1,6 @@
 import { USER_INTERFACE_ID } from '../constants.js';
-import { getNumberOfCorrectAnswers, quizData } from '../data.js';
+import { quizData } from '../data.js';
+import { getNumberOfCorrectAnswers } from '../util/numberOfCorrectAnswer.js';
 
 export const initReviewPage = () => {
   const userInterface = document.getElementById(USER_INTERFACE_ID);
@@ -10,7 +11,8 @@ export const initReviewPage = () => {
   element.innerHTML = `<h1>Quiz is completed </h1>
     <h2> You got ${getNumberOfCorrectAnswers()} of ${
     quizData.questions.length
-  } question correct </h2>`;
+  } question correct </h2>
+  `;
 
   userInterface.appendChild(element);
 };
