@@ -17,7 +17,6 @@ import { showScore } from '../views/scoreView.js';
 export const initQuestionPage = () => {
   if (quizData.currentQuestionIndex + 1 > quizData.questions.length) {
     initReviewPage();
-
     return false;
   }
 
@@ -44,7 +43,10 @@ export const initQuestionPage = () => {
     answerElement.addEventListener('click', function () {
       currentQuestion.selected = key;
 
-      nextQuestion();
+      if (currentQuestion.selected == currentQuestion.correct) {
+        showScore();
+      }
+      setTimeout(nextQuestion, 1000);
     });
 
     if (key === 'A' || key === 'B') {
