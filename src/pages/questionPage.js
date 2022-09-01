@@ -2,6 +2,8 @@
 
 import {
   ANSWERS_LIST_ID,
+  TOP_ANSWERS_LIST_ID,
+  BOTTOM_ANSWERS_LIST_ID,
   NEXT_QUESTION_BUTTON_ID,
   USER_INTERFACE_ID,
 } from '../constants.js';
@@ -30,6 +32,10 @@ export const initQuestionPage = () => {
     nextQuestion();
   });
   const answersListElement = document.getElementById(ANSWERS_LIST_ID);
+  const topAnswersListElement = document.getElementById(TOP_ANSWERS_LIST_ID);
+  const bottomAnswersListElement = document.getElementById(
+    BOTTOM_ANSWERS_LIST_ID
+  );
 
   for (const [key, answerText] of Object.entries(currentQuestion.answers)) {
     const answerElement = createAnswerElement(key, answerText);
@@ -39,7 +45,11 @@ export const initQuestionPage = () => {
       nextQuestion();
     });
 
-    answersListElement.appendChild(answerElement);
+    if (key === 'A' || key === 'B') {
+      topAnswersListElement.appendChild(answerElement);
+    } else {
+      bottomAnswersListElement.appendChild(answerElement);
+    }
   }
 
   document
