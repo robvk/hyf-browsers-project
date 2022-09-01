@@ -1,7 +1,10 @@
-import { USER_INTERFACE_ID,GO_TO_FEEDBACK_PAGE_BUTTON_ID } from '../constants.js';
+import {
+  USER_INTERFACE_ID,
+  GO_TO_FEEDBACK_PAGE_BUTTON_ID,
+} from '../constants.js';
 import { quizData } from '../data.js';
-import { getNumberOfCorrectAnswers } from '../views/numberOfCorrectAnswer.js';
-import { initSummaryPage } from './feedbackPage.js';
+import { getNumberOfCorrectAnswers } from '../util/numberOfCorrectAnswer.js';
+import { initFeedbackPage } from './feedbackPage.js';
 
 export const initReviewPage = () => {
   const userInterface = document.getElementById(USER_INTERFACE_ID);
@@ -23,6 +26,5 @@ export const initReviewPage = () => {
 
   document
     .getElementById(GO_TO_FEEDBACK_PAGE_BUTTON_ID)
-    .addEventListener('click', initSummaryPage);
+    .addEventListener('click', initFeedbackPage);
 };
-
