@@ -38,7 +38,7 @@ export const initQuestionPage = () => {
     answerElement.addEventListener('click', function () {
       currentQuestion.selected = key;
 
-      //nextQuestion();
+      nextQuestion();
     });
 
     answersListElement.appendChild(answerElement);

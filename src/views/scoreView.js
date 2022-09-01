@@ -1,4 +1,4 @@
-import { getNumberOfCorrectAnswers } from '../views/numberOfCorrectAnswer.js';
+import { getNumberOfCorrectAnswers } from '../util/numberOfCorrectAnswer.js';
 import { SCORE_ID } from '../constants.js';
 
 export const showScore = () => {
