@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Arvo", sans-serif;
+  background-color: #F9DE56;
+}
+
 .centered {
   position: fixed;
   top: 50%;
@@ -26,10 +31,36 @@
 
 .answer {
   cursor: pointer;
+  font-family: "Arvo", sans-serif;
 }
 
-ul {
-  list-style: none;
+.sub-answer-list {
+  display: flex;
+  justify-content: center;;
+}
+
+.answer {
+  background-color: #E3D45B;
+  color: #439070;
+  border: 1px solid #439070;
+  border-radius: 5px;
+  margin: 2px;
+  padding: 2px;
+  display: flex;
+  width: 20vw;
+}
+
+.answer:hover {
+  background-color: #B5BF5B;
+}
+
+.counter{
+  color:blue;
+}
+
+.bold-text {
+  font-family: "Arvo", sans-serif;
+  font-weight: bold;
 }
 
 .green {
@@ -50,7 +81,7 @@ ul {
   width: 10rem;
   height: 2.5rem;
   position: absolute;
-  top: 12rem;
+  top: 2rem;
   background-color: #50b9b8;
   font-family: “Arvo”, sans-serif;
   font-weight: bold;
@@ -96,4 +127,40 @@ img {
   justify-content: center;
   border-radius: 00.5rem;
   margin-left: 0.4rem;
+}
+.option-number {
+  background-color: #F9DE56;
+  color: #439070;
+  border: 0.5px solid #439070;
+  margin: 2px;
+  padding: 2px;
+  font-family: sans-serif;
+}
+
+.option-number-selected {
+  color: #F9DE56;
+  background-color: #439070;
+  border: 0.5px solid #439070;
+  margin: 2px;
+  padding: 2px;
+}
+
+#start-quiz-button,
+#next-question-button {
+  background-color: #50B9B8;
+  font-family: "Arvo", sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+#start-quiz-button:hover,
+#next-question-button:hover {
+  background-color: #7FC2B5;
+}
+
+.disable {
+  pointer-events: none;
 }
