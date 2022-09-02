@@ -9,10 +9,7 @@ export const createFeedbackAnswerElement = (question, index) => {
   }) is <b> not achieved</b></p> 
   <p><b>Correct Answer is</b>: ${question.correct}) ${
     question.answers[question.correct]
-  }</p>
-  <p> For more information click this link <a href="${
-    question.links[0].href
-  }">${question.links[0].href}</a></p> <hr>
+  }</p> <hr>
   `;
   return element;
 };

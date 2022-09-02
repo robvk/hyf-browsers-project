@@ -164,3 +164,7 @@ img {
 .disable {
   pointer-events: none;
 }
+
+.answer-text {
+  margin-left: 5px;
+}

@@ -11,8 +11,6 @@
     not by your listeners
 */
 
-
-
 export const quizData = {
   currentQuestionIndex: 0,
   counter: undefined,
@@ -20,32 +18,22 @@ export const quizData = {
   // the questions in the quiz
   questions: [
     {
-      text: 'What are the different ways to declare a JS variable?',
+      text: 'Click the best synonym for constitution:',
       answers: {
-        A: 'constant, let, variable',
-        B: 'var, const, let, function',
-        C: 'var, let, const',
+        A: 'system of laws',
+        B: 'card games',
+        C: 'faraway galaxy',
       },
-      correct: 'C',
+      correct: 'A',
       selected: null,
-      links: [
-        {
-          text: 'javascript.info',
-          href: 'https://javascript.info/variables',
-        },
-        {
-          text: 'Tyler McGinnis',
-          href: 'https://ui.dev/var-let-const/',
-        },
-      ],
     },
     {
-      text: 'What does `typeof` do?',
+      text: 'Click the best synonym for resort:',
       answers: {
-        A: 'changes the type of a primitive value',
-        B: 'returns a string describing the type of a value',
-        C: 'determines if a value is primitive',
-        D: 'can tell the difference between arrays and objects',
+        A: 'empty room',
+        B: 'vacation place',
+        C: 'jungle',
+        D: 'tunnel',
       },
       correct: 'B',
       selected: null,
@@ -61,6 +49,114 @@ export const quizData = {
         },
       ],
     },
-    // Add more questions here
+    {
+      text: 'Click the best synonym for sophisticated:',
+      answers: {
+        A: 'strong',
+        B: 'cheap',
+        C: 'experienced',
+        D: 'true',
+      },
+      correct: 'C',
+      selected: null,
+      links: [
+        {
+          text: 'javascript.info',
+          href: 'https://javascript.info/types#type-typeof',
+        },
+        {
+          text: 'MDN',
+          href:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof',
+        },
+      ],
+    },
+    {
+      text: 'Click the best synonym for corridor:',
+      answers: {
+        A: 'passage',
+        B: 'symbol',
+        C: 'exit',
+        D: 'rust',
+      },
+      correct: 'A',
+      selected: null,
+      links: [
+        {
+          text: 'javascript.info',
+          href: 'https://javascript.info/types#type-typeof',
+        },
+        {
+          text: 'MDN',
+          href:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof',
+        },
+      ],
+    },
+    {
+      text: 'Click the best synonym for bid:',
+      answers: {
+        A: 'offer',
+        B: 'stamp',
+        C: 'portray',
+      },
+      correct: 'A',
+      selected: null,
+    },
+    {
+      text: 'Click the best synonym for mention:',
+      answers: {
+        A: 'oppose',
+        B: 'create',
+        C: 'create',
+        D: 'refer to',
+      },
+      correct: 'D',
+      selected: null,
+    },
+    {
+      text: 'Click the best synonym for guidance:',
+      answers: {
+        A: 'principal',
+        B: 'advice',
+        C: 'create',
+        D: 'refer to',
+      },
+      correct: 'B',
+      selected: null,
+    },
+    {
+      text: 'Click the best synonym for nervous:',
+      answers: {
+        A: 'principal',
+        B: 'advice',
+        C: 'worried',
+        D: 'refer to',
+      },
+      correct: 'C',
+      selected: null,
+    },
+    {
+      text: 'Click the best synonym for succeed',
+      answers: {
+        A: 'principal',
+        B: 'achieve',
+        C: 'worried',
+        D: 'refer to',
+      },
+      correct: 'B',
+      selected: null,
+    },
+    {
+      text: 'Click the best synonym for vision',
+      answers: {
+        A: 'principal',
+        B: 'sight',
+        C: 'worried',
+        D: 'refer to',
+      },
+      correct: 'B',
+      selected: null,
+    },
   ],
 };
