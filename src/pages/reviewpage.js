@@ -13,10 +13,10 @@ export const initReviewPage = () => {
   const element = document.createElement('div');
 
   element.innerHTML = `<h1>Quiz is completed </h1>
-    <h2> You got ${getNumberOfCorrectAnswers()} of ${
+    <h3> You got ${getNumberOfCorrectAnswers()} of ${
     quizData.questions.length
-  } question correct </h2>
-  <h2>To see feedback on your answers, please click below button!</h2>
+  } question correct </h3>
+  <h4>To see feedback on your answers, please click below button!</h4>
   <button id="${GO_TO_FEEDBACK_PAGE_BUTTON_ID}">
       Go to Summary
     </button>
