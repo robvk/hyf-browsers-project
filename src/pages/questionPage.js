@@ -53,6 +53,10 @@ export const initQuestionPage = () => {
           .classList.add('green');
       }
 
+      for (const element of document.getElementsByClassName('answer')) {
+        element.classList.add('disable');
+      }
+
       setTimeout(nextQuestion, 1000);
     });
 

@@ -13,7 +13,8 @@ export const ANSWERS_LIST_ID = 'answers-list';
 export const TOP_ANSWERS_LIST_ID = 'top-answers-list';
 export const BOTTOM_ANSWERS_LIST_ID = 'bottom-answers-list';
 export const NEXT_QUESTION_BUTTON_ID = 'next-question-button';
-export const TIMER_ID = 'timer';
+export const TIMER_ID = 'timer-div';
 export const SCORE_ID = 'score';
 export const GO_TO_FEEDBACK_PAGE_BUTTON_ID = 'gofeedbackPage';
-export const RESTART_QUIZ_BUTTON_ID = 'restart-quiz-button';
+export const RESTART_QUIZ_BUTTON_ID = 'restart-quiz-button'
+

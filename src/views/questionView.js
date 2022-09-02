@@ -21,15 +21,15 @@ export const createQuestionElement = (question) => {
   element.innerHTML = String.raw`
     <div id="${SCORE_ID}"> </div>
     <div id="${TIMER_ID}"> </div>
-    <h2 class='counter'>Question ${quizData.currentQuestionIndex + 1} / ${
+    <div class='counter'>Question ${quizData.currentQuestionIndex + 1} / ${
     quizData.questions.length
-  }</h2>
+  }</div>
 
-    <h1>${question}</h1>
+    <h1>${quizData.currentQuestionIndex + 1}-${question}</h1>
 
-    <div id="${ANSWERS_LIST_ID}">
-      <ul id="${TOP_ANSWERS_LIST_ID}"></ul>
-      <ul id="${BOTTOM_ANSWERS_LIST_ID}"></ul>
+    <div id="${ANSWERS_LIST_ID}" class="answers-list">
+      <div id="${TOP_ANSWERS_LIST_ID}" class="sub-answer-list"></div>
+      <div id="${BOTTOM_ANSWERS_LIST_ID}" class="sub-answer-list"></div>
     </div>
 
     <button id="${NEXT_QUESTION_BUTTON_ID}">
