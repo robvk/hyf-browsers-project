@@ -39,6 +39,8 @@ export const initQuestionPage = () => {
   );
 
   for (const [key, answerText] of Object.entries(currentQuestion.answers)) {
+    const wrongAnswer = document.getElementById('wrong-answer')
+    const correctAnswer = document.getElementById('correct-answer')
     const answerElement = createAnswerElement(key, answerText);
     answerElement.addEventListener('click', function () {
       currentQuestion.selected = key;
@@ -46,8 +48,10 @@ export const initQuestionPage = () => {
       if (key == currentQuestion.correct) {
         showScore();
         document.getElementById(`answer-${key}`).classList.add('green');
+        correctAnswer.play();
       } else {
         document.getElementById(`answer-${key}`).classList.add('red');
+        wrongAnswer.play()
         document
           .getElementById(`answer-${currentQuestion.correct}`)
           .classList.add('green');

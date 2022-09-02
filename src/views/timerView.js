@@ -3,13 +3,13 @@ import { quizData } from '../data.js';
 
 export const countDown = (callback) => {
   let timer = 15;
-  const audio = document.getElementById('warning-sound')
+  const warningAudio = document.getElementById('warning-sound')
 
   function timeDown() {
     const timerDiv = document.getElementById(TIMER_ID);
     timerDiv.innerHTML = `<div>Time Left:</div><div class='timer'>${timer}</div>`;
     timer--;
-    audio.pause();
+    warningAudio.pause();
 
     if (timer < 0) {
       clearInterval(quizData.counter);
@@ -19,7 +19,7 @@ export const countDown = (callback) => {
     //When timer goes below zero, background will be red
     if (timer < 10) {
       timerDiv.style.background = 'red';
-      audio.play()
+      warningAudio.play()
     }
   }
 
