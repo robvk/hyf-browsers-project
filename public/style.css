@@ -146,7 +146,9 @@ img {
 }
 
 #start-quiz-button,
-#next-question-button {
+#next-question-button,
+#restart-quiz-button,
+#gofeedbackPage {
   background-color: #50B9B8;
   font-family: "Arvo", sans-serif;
   font-weight: bold;
@@ -157,7 +159,9 @@ img {
 }
 
 #start-quiz-button:hover,
-#next-question-button:hover {
+#next-question-button:hover,
+#restart-quiz-button:hover,
+#gofeedbackPage:hover {
   background-color: #7FC2B5;
 }
 
