@@ -10,6 +10,7 @@ export const countDown = (callback) => {
     timerDiv.innerHTML = `<div>Time Left:</div><div class='timer'>${timer}</div>`;
     timer--;
     warningAudio.pause();
+    document.getElementById(TIMER_ID).classList.remove('blink');
 
     if (timer < 0) {
       clearInterval(quizData.counter);
@@ -19,6 +20,7 @@ export const countDown = (callback) => {
     //When timer goes below zero, background will be red
     if (timer < 10) {
       timerDiv.style.background = 'red';
+      document.getElementById(TIMER_ID).classList.add('blink');
       warningAudio.play()
     }
   }
