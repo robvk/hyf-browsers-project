@@ -20,30 +20,20 @@ export const quizData = {
     {
       text: 'Click the best synonym for constitution:',
       answers: {
-        a: 'system of laws',
-        b: 'card games',
-        c: 'faraway galaxy',
+        A: 'system of laws',
+        B: 'card games',
+        C: 'faraway galaxy',
       },
-      correct: 'a',
+      correct: 'A',
       selected: null,
-      links: [
-        {
-          text: 'javascript.info',
-          href: 'https://javascript.info/variables',
-        },
-        {
-          text: 'Tyler McGinnis',
-          href: 'https://ui.dev/var-let-const/',
-        },
-      ],
     },
     {
       text: 'Click the best synonym for resort:',
       answers: {
-        a: 'empty room',
-        b: 'vacation place',
-        c: 'jungle',
-        d: 'tunnel',
+        A: 'empty room',
+        B: 'vacation place',
+        C: 'jungle',
+        D: 'tunnel',
       },
       correct: 'B',
       selected: null,
@@ -62,12 +52,12 @@ export const quizData = {
     {
       text: 'Click the best synonym for sophisticated:',
       answers: {
-        a: 'strong',
-        b: 'cheap',
-        c: 'experienced',
-        d: 'true',
+        A: 'strong',
+        B: 'cheap',
+        C: 'experienced',
+        D: 'true',
       },
-      correct: 'c',
+      correct: 'C',
       selected: null,
       links: [
         {
@@ -84,12 +74,12 @@ export const quizData = {
     {
       text: 'Click the best synonym for corridor:',
       answers: {
-        a: 'passage',
-        b: 'symbol',
-        c: 'exit',
-        d: 'rust',
+        A: 'passage',
+        B: 'symbol',
+        C: 'exit',
+        D: 'rust',
       },
-      correct: 'a',
+      correct: 'A',
       selected: null,
       links: [
         {
@@ -106,127 +96,67 @@ export const quizData = {
     {
       text: 'Click the best synonym for bid:',
       answers: {
-        a: 'offer',
-        b: 'stamp',
-        c: 'portray',
+        A: 'offer',
+        B: 'stamp',
+        C: 'portray',
       },
-      correct: 'a',
+      correct: 'A',
       selected: null,
-      links: [
-        {
-          text: 'javascript.info',
-          href: 'https://javascript.info/variables',
-        },
-        {
-          text: 'Tyler McGinnis',
-          href: 'https://ui.dev/var-let-const/',
-        },
-      ],
     },
     {
       text: 'Click the best synonym for mention:',
       answers: {
-        a: 'oppose',
-        b: 'create',
-        c: 'create',
-        d: 'refer to',
+        A: 'oppose',
+        B: 'create',
+        C: 'create',
+        D: 'refer to',
       },
-      correct: 'd',
+      correct: 'D',
       selected: null,
-      links: [
-        {
-          text: 'javascript.info',
-          href: 'https://javascript.info/variables',
-        },
-        {
-          text: 'Tyler McGinnis',
-          href: 'https://ui.dev/var-let-const/',
-        },
-      ],
     },
     {
       text: 'Click the best synonym for guidance:',
       answers: {
-        a: 'principal',
-        b: 'advice',
-        c: 'create',
-        d: 'refer to',
+        A: 'principal',
+        B: 'advice',
+        C: 'create',
+        D: 'refer to',
       },
-      correct: 'b',
+      correct: 'B',
       selected: null,
-      links: [
-        {
-          text: 'javascript.info',
-          href: 'https://javascript.info/variables',
-        },
-        {
-          text: 'Tyler McGinnis',
-          href: 'https://ui.dev/var-let-const/',
-        },
-      ],
     },
     {
       text: 'Click the best synonym for nervous:',
       answers: {
-        a: 'principal',
-        b: 'advice',
-        c: 'worried',
-        d: 'refer to',
+        A: 'principal',
+        B: 'advice',
+        C: 'worried',
+        D: 'refer to',
       },
-      correct: 'c',
+      correct: 'C',
       selected: null,
-      links: [
-        {
-          text: 'javascript.info',
-          href: 'https://javascript.info/variables',
-        },
-        {
-          text: 'Tyler McGinnis',
-          href: 'https://ui.dev/var-let-const/',
-        },
-      ],
     },
     {
       text: 'Click the best synonym for succeed',
       answers: {
-        a: 'principal',
-        b: 'achieve',
-        c: 'worried',
-        d: 'refer to',
+        A: 'principal',
+        B: 'achieve',
+        C: 'worried',
+        D: 'refer to',
       },
-      correct: 'b',
+      correct: 'B',
       selected: null,
-      links: [
-        {
-          text: 'javascript.info',
-          href: 'https://javascript.info/variables',
-        },
-        {
-          text: 'Tyler McGinnis',
-          href: 'https://ui.dev/var-let-const/',
-        },
-      ],
     },
     {
       text: 'Click the best synonym for vision',
       answers: {
-        a: 'principal',
-        b: 'sight',
-        c: 'worried',
-        d: 'refer to',
+        A: 'principal',
+        B: 'sight',
+        C: 'worried',
+        D: 'refer to',
       },
-      correct: 'b',
+      correct: 'B',
       selected: null,
-      links: [
-        {
-          text: 'javascript.info',
-          href: 'https://javascript.info/variables',
-        },
-        {
-          text: 'Tyler McGinnis',
-          href: 'https://ui.dev/var-let-const/',
-        },
-      ],
     },
   ],
 };
