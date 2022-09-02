@@ -62,7 +62,7 @@ When you have chosen your goal, you can create tasks as issues on Github and ass
 Tasks could look like this, using the [MoSCoW](https://en.wikipedia.org/wiki/MoSCoW_method) labels for prioritization
 
 - [x] (must have) A user can see one question at a time, stepping through the quiz
-- [ ] (must have) A user can select an answer for each question
+- [x] (must have) A user can select an answer for each question
 - [ ] (must have) Change the <title>
 - [ ] (must have) add a favicon
 - [ ] (should have) A user can see what the correct answer is after they selected their answer.

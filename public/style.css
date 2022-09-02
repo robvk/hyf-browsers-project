@@ -12,6 +12,21 @@
   overflow: auto;
 }
 
+.answer {
+  cursor: pointer;
+}
+
 ul {
   list-style: none;
+}
+
+.counter{
+  color:blue;  
+}
+.green{
+  color: green;
+}
+
+.red{
+  color: red;
 }
