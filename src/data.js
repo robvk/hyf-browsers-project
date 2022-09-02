@@ -22,11 +22,11 @@ export const quizData = {
     {
       text: 'What are the different ways to declare a JS variable?',
       answers: {
-        a: 'constant, let, variable',
-        b: 'var, const, let, function',
-        c: 'var, let, const',
+        A: 'constant, let, variable',
+        B: 'var, const, let, function',
+        C: 'var, let, const',
       },
-      correct: 'c',
+      correct: 'C',
       selected: null,
       links: [
         {
@@ -42,12 +42,12 @@ export const quizData = {
     {
       text: 'What does `typeof` do?',
       answers: {
-        a: 'changes the type of a primitive value',
-        b: 'returns a string describing the type of a value',
-        c: 'determines if a value is primitive',
-        d: 'can tell the difference between arrays and objects',
+        A: 'changes the type of a primitive value',
+        B: 'returns a string describing the type of a value',
+        C: 'determines if a value is primitive',
+        D: 'can tell the difference between arrays and objects',
       },
-      correct: 'b',
+      correct: 'B',
       selected: null,
       links: [
         {

@@ -1,6 +1,12 @@
 'use strict';
 
-import { ANSWERS_LIST_ID, TIMER_ID,SCORE_ID} from '../constants.js';
+import {
+  TOP_ANSWERS_LIST_ID,
+  BOTTOM_ANSWERS_LIST_ID,
+  ANSWERS_LIST_ID,
+  TIMER_ID,
+  SCORE_ID,
+} from '../constants.js';
 import { NEXT_QUESTION_BUTTON_ID } from '../constants.js';
 import { quizData } from '../data.js';
 
@@ -21,8 +27,10 @@ export const createQuestionElement = (question) => {
 
     <h1>${question}</h1>
 
-    <ul id="${ANSWERS_LIST_ID}">
-    </ul>
+    <div id="${ANSWERS_LIST_ID}">
+      <ul id="${TOP_ANSWERS_LIST_ID}"></ul>
+      <ul id="${BOTTOM_ANSWERS_LIST_ID}"></ul>
+    </div>
 
     <button id="${NEXT_QUESTION_BUTTON_ID}">
       Next question
