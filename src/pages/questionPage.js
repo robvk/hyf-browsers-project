@@ -43,9 +43,16 @@ export const initQuestionPage = () => {
     answerElement.addEventListener('click', function () {
       currentQuestion.selected = key;
 
-      if (currentQuestion.selected == currentQuestion.correct) {
+      if (key == currentQuestion.correct) {
         showScore();
+        document.getElementById(`answer-${key}`).classList.add('green');
+      } else {
+        document.getElementById(`answer-${key}`).classList.add('red');
+        document
+          .getElementById(`answer-${currentQuestion.correct}`)
+          .classList.add('green');
       }
+
       setTimeout(nextQuestion, 1000);
     });
 

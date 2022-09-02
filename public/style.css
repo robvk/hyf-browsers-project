@@ -2,6 +2,7 @@ body {
   font-family: "Arvo", sans-serif;
   background-color: #F9DE56;
 }
+
 .centered {
   position: fixed;
   top: 50%;
@@ -15,6 +16,7 @@ body {
   max-height: 80vh;
   overflow: auto;
 }
+
 .answer {
   cursor: pointer;
   font-family: "Arvo", sans-serif;
@@ -24,6 +26,7 @@ ul {
   list-style: none;
   display: flex;
 }
+
 li {
   background-color: #E3D45B;
   color: #439070;
@@ -34,20 +37,19 @@ li {
   display: flex;
   width: 20vw;
 }
+
 li:hover {
   background-color: #B5BF5B;
 }
+
 .counter{
-  color:blue;  
+  color:blue;
 }
-
-
 
 .bold-text {
   font-family: "Arvo", sans-serif;
   font-weight: bold;
 }
-
 
 .option-number {
   background-color: #F9DE56;
@@ -57,6 +59,7 @@ li:hover {
   padding: 2px;
   font-family: sans-serif;
 }
+
 .option-number-selected {
   color: #F9DE56;
   background-color: #439070;
@@ -64,6 +67,7 @@ li:hover {
   margin: 2px;
   padding: 2px;
 }
+
 #start-quiz-button,
 #next-question-button {
   background-color: #50B9B8;
@@ -74,6 +78,7 @@ li:hover {
   padding: 5px;
   font-size: 20px;
 }
+
 #start-quiz-button:hover,
 #next-question-button:hover {
   background-color: #7FC2B5;
