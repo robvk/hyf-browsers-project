@@ -2,6 +2,8 @@
 
 import {
   ANSWERS_LIST_ID,
+  TOP_ANSWERS_LIST_ID,
+  BOTTOM_ANSWERS_LIST_ID,
   NEXT_QUESTION_BUTTON_ID,
   USER_INTERFACE_ID,
 } from '../constants.js';
@@ -31,19 +33,34 @@ export const initQuestionPage = () => {
     nextQuestion();
   });
   const answersListElement = document.getElementById(ANSWERS_LIST_ID);
+  const topAnswersListElement = document.getElementById(TOP_ANSWERS_LIST_ID);
+  const bottomAnswersListElement = document.getElementById(
+    BOTTOM_ANSWERS_LIST_ID
+  );
 
   for (const [key, answerText] of Object.entries(currentQuestion.answers)) {
     const answerElement = createAnswerElement(key, answerText);
     answerElement.addEventListener('click', function () {
       currentQuestion.selected = key;
 
-      if (currentQuestion.selected == currentQuestion.correct) {
+      if (key == currentQuestion.correct) {
         showScore();
+        document.getElementById(`answer-${key}`).classList.add('green');
+      } else {
+        document.getElementById(`answer-${key}`).classList.add('red');
+        document
+          .getElementById(`answer-${currentQuestion.correct}`)
+          .classList.add('green');
       }
+
       setTimeout(nextQuestion, 1000);
     });
 
-    answersListElement.appendChild(answerElement);
+    if (key === 'A' || key === 'B') {
+      topAnswersListElement.appendChild(answerElement);
+    } else {
+      bottomAnswersListElement.appendChild(answerElement);
+    }
   }
 
   document

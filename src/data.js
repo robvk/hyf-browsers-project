@@ -11,8 +11,6 @@
     not by your listeners
 */
 
-
-
 export const quizData = {
   currentQuestionIndex: 0,
   counter: undefined,
@@ -47,7 +45,7 @@ export const quizData = {
         c: 'jungle',
         d: 'tunnel',
       },
-      correct: 'b',
+      correct: 'B',
       selected: null,
       links: [
         {
@@ -84,26 +82,26 @@ export const quizData = {
       ],
     },
     {
-        text: 'Click the best synonym for corridor:',
-        answers: {
-          a: 'passage',
-          b: 'symbol',
-          c: 'exit',
-          d: 'rust',
+      text: 'Click the best synonym for corridor:',
+      answers: {
+        a: 'passage',
+        b: 'symbol',
+        c: 'exit',
+        d: 'rust',
+      },
+      correct: 'a',
+      selected: null,
+      links: [
+        {
+          text: 'javascript.info',
+          href: 'https://javascript.info/types#type-typeof',
         },
-        correct: 'a',
-        selected: null,
-        links: [
-          {
-            text: 'javascript.info',
-            href: 'https://javascript.info/types#type-typeof',
-          },
-          {
-            text: 'MDN',
-            href:
-              'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof',
-          },
-        ],
+        {
+          text: 'MDN',
+          href:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof',
+        },
+      ],
     },
     {
       text: 'Click the best synonym for bid:',
@@ -230,8 +228,5 @@ export const quizData = {
         },
       ],
     },
-    
-    
-
   ],
 };
