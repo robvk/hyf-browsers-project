@@ -2,16 +2,21 @@ import { TIMER_ID } from '../constants.js';
 import { quizData } from '../data.js';
 
 export const countDown = (callback) => {
-  let timer = 30;
+  let timer = 15;
 
   function timeDown() {
     const timerDiv = document.getElementById(TIMER_ID);
-    timerDiv.textContent = 'Time Left: ' + timer;
+    timerDiv.innerHTML = `<div>Time Left:</div><div class='timer'>${timer}</div>`;
     timer--;
 
     if (timer < 0) {
       clearInterval(quizData.counter);
       callback();
+    }
+
+    //When timer goes below zero, background will be red
+    if (timer < 10) {
+      timerDiv.style.background = 'red';
     }
   }
 

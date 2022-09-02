@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: "Arvo", sans-serif;
   background-color: #F9DE56;
@@ -9,6 +14,13 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  width: 100%;
+  height: 100%;
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .scrollable {
@@ -22,12 +34,12 @@ body {
   font-family: "Arvo", sans-serif;
 }
 
-ul {
-  list-style: none;
+.sub-answer-list {
   display: flex;
+  justify-content: center;;
 }
 
-li {
+.answer {
   background-color: #E3D45B;
   color: #439070;
   border: 1px solid #439070;
@@ -38,7 +50,7 @@ li {
   width: 20vw;
 }
 
-li:hover {
+.answer:hover {
   background-color: #B5BF5B;
 }
 
@@ -51,6 +63,71 @@ li:hover {
   font-weight: bold;
 }
 
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}
+/* Below css can be merged to Nida`s css */
+#timer-div,
+#score,
+.counter {
+  box-shadow: rgba(0, 0, 0, 0.366) 0px 4px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 2.5rem;
+  position: absolute;
+  top: 2rem;
+  background-color: #50b9b8;
+  font-family: “Arvo”, sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+}
+
+#timer-div {
+  left: 1rem;
+  flex-direction: row;
+  height: 2.5rem;
+}
+
+#score {
+  right: 1rem;
+}
+
+.counter {
+  left: 40%;
+}
+#welcomeMsg {
+  font-size: 20rem;
+}
+.welcome {
+  padding: 2rem;
+  background-color: #50b9b8;
+  border-radius: 1rem;
+}
+
+img {
+  padding: 1.5rem;
+}
+.timer {
+  display: block;
+  background-color: black;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 00.5rem;
+  margin-left: 0.4rem;
+}
 .option-number {
   background-color: #F9DE56;
   color: #439070;
@@ -82,4 +159,8 @@ li:hover {
 #start-quiz-button:hover,
 #next-question-button:hover {
   background-color: #7FC2B5;
+}
+
+.disable {
+  pointer-events: none;
 }

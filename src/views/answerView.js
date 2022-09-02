@@ -5,7 +5,7 @@
  * @returns {Element}
  */
 export const createAnswerElement = (key, answerText) => {
-  const element = document.createElement('li');
+  const element = document.createElement('div');
   element.classList.add('answer');
   element.id = `answer-${key}`;
   element.innerHTML = String.raw`
