@@ -50,9 +50,24 @@ body {
   width: 20vw;
 }
 
+.answer-key {
+  background-color: #F9DE56;
+  color: #439070;
+  border: 0.5px solid #439070;
+  margin: 2px;
+  padding: 3px 6px;
+  font-family: sans-serif;
+}
+
 .answer:hover {
   background-color: #B5BF5B;
 }
+.answer:hover .answer-key {
+    color: #F9DE56;
+    background-color: #439070;
+    border: 0.5px solid #439070;
+}
+
 
 .counter{
   color:blue;
@@ -141,6 +156,7 @@ img {
   border-radius: 3px;
   padding: 5px;
   font-size: 20px;
+  margin-top: 10px;
 }
 
 #start-quiz-button:hover,
