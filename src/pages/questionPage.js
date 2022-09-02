@@ -47,14 +47,14 @@ export const initQuestionPage = () => {
 
       if (key == currentQuestion.correct) {
         showScore();
-        document.getElementById(`answer-${key}`).classList.add('green');
+        document.getElementById(`answer-${key}`).classList.add('green', 'blink');
         correctAnswer.play();
       } else {
         document.getElementById(`answer-${key}`).classList.add('red');
         wrongAnswer.play()
         document
           .getElementById(`answer-${currentQuestion.correct}`)
-          .classList.add('green');
+          .classList.add('green', 'blink');
       }
 
       for (const element of document.getElementsByClassName('answer')) {
