@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Arvo", sans-serif;
-  background-color: #F9DE56;
+  font-family: 'Arvo', sans-serif;
+  background-color: #f9de56;
 }
 
 .centered {
@@ -21,6 +21,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: scroll;
 }
 
 .scrollable {
@@ -29,47 +30,52 @@ body {
   overflow: auto;
 }
 
-.answer {
-  cursor: pointer;
-  font-family: "Arvo", sans-serif;
-}
-
 .sub-answer-list {
   display: flex;
-  justify-content: center;;
+  justify-content: center;
 }
 
 .answer {
-  background-color: #E3D45B;
-  color: #439070;
+  cursor: pointer;
+  font-family: 'Arvo', sans-serif;
+  background-color: #e3d45b;
+  color: black;
   border: 1px solid #439070;
   border-radius: 5px;
   margin: 2px;
   padding: 2px;
   display: flex;
-  width: 20vw;
+  align-items: center;
+  width: 15vw;
+  margin: 7px;
 }
 
 .answer:hover {
-  background-color: #B5BF5B;
-}
-
-.counter{
-  color:blue;
+  background-color: #b5bf5b;
 }
 
 .bold-text {
-  font-family: "Arvo", sans-serif;
+  font-family: 'Arvo', sans-serif;
   font-weight: bold;
 }
 
-.green {
-  color: green;
+.correct {
+  background-color: green;
+  color: white;
+  padding: 0.3rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid black;
 }
-.red {
-  color: red;
+.wrong {
+  background-color: red;
+  color: white;
+  padding: 0.3rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid black;
 }
-/* Below css can be merged to Nida`s css */
+
 #timer-div,
 #score,
 .counter {
@@ -81,7 +87,7 @@ body {
   width: 10rem;
   height: 2.5rem;
   position: absolute;
-  top: 2rem;
+  top: 9rem;
   background-color: #50b9b8;
   font-family: “Arvo”, sans-serif;
   font-weight: bold;
@@ -128,37 +134,28 @@ img {
   border-radius: 00.5rem;
   margin-left: 0.4rem;
 }
-.option-number {
-  background-color: #F9DE56;
-  color: #439070;
-  border: 0.5px solid #439070;
-  margin: 2px;
-  padding: 2px;
-  font-family: sans-serif;
-}
-
-.option-number-selected {
-  color: #F9DE56;
-  background-color: #439070;
-  border: 0.5px solid #439070;
-  margin: 2px;
-  padding: 2px;
-}
 
 #start-quiz-button,
-#next-question-button {
-  background-color: #50B9B8;
-  font-family: "Arvo", sans-serif;
+#next-question-button,
+#gofeedbackPage,
+#restart-quiz-button {
+  background-color: #50b9b8;
+  font-family: 'Arvo', sans-serif;
   font-weight: bold;
   border: none;
   border-radius: 3px;
   padding: 5px;
   font-size: 20px;
+  margin: 2rem;
+  transition: transform 250ms, opacity 400ms;
 }
 
 #start-quiz-button:hover,
-#next-question-button:hover {
-  background-color: #7FC2B5;
+#next-question-button:hover,
+#gofeedbackPage:hover,
+#restart-quiz-button:hover {
+  background-color: #7fc2b5;
+  transform: scale(1.5);
 }
 
 .disable {
@@ -167,4 +164,59 @@ img {
 
 .answer-text {
   margin-left: 5px;
+}
+
+.question-text {
+  margin: 1rem;
+}
+
+.review-page h1 {
+  background-color: #50b9b8;
+  margin: 3rem;
+  border-radius: 0.5rem;
+}
+.review-page span {
+  color: #50b9b8;
+  background-color: black;
+  padding: 5px;
+}
+
+.review-page h2 {
+  margin: 2rem;
+}
+hr {
+  margin: 0.3rem;
+  color: #50b9b8;
+}
+
+.feedback-title h1 b {
+  background-color: #50b9b8;
+  color: black;
+  padding: 1rem;
+  border: 1px solid #50b9b8;
+  border-radius: 1rem;
+}
+.feedback-title img {
+  margin-top: 1rem;
+}
+.feedback-title h3 {
+  background-color: #50b9b8;
+  color: black;
+  padding: 1rem;
+  border: 1px solid #50b9b8;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.feedback-answer span {
+  color: #50b9b8;
+}
+
+.answer-key {
+  background-color: white;
+  padding: 0.3rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid black;
 }

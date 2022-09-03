@@ -11,7 +11,6 @@ export const createAnswerElement = (key, answerText) => {
   element.innerHTML = String.raw`
     <div class="answer-key">${key}</div>
     <div class="answer-text">${answerText}</div>
-    <div class="answer-checkmark"></div>
   `;
   return element;
 };
