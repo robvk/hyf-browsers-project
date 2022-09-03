@@ -16,7 +16,13 @@ import { quizData } from '../data.js';
  */
 export const createQuestionElement = (question) => {
   const element = document.createElement('div');
-
+  let splitQues = question.split(' ');
+  let mainques = "";
+  let lastWord = splitQues[splitQues.length-1]
+    for(let i = 0; i < splitQues.length - 1; i++){
+        mainques += splitQues[i] + " ";      
+    }
+  
   // I use String.raw just to get fancy colors for the HTML in VS Code.
   element.innerHTML = String.raw`
     <div id="${SCORE_ID}"> </div>
@@ -25,7 +31,7 @@ export const createQuestionElement = (question) => {
     quizData.questions.length
   }</div>
 
-    <h1>${quizData.currentQuestionIndex + 1}-${question}</h1>
+    <p class="question">${quizData.currentQuestionIndex + 1}.  ${mainques} <em class="bold-text">${lastWord}</em></p>
 
     <div id="${ANSWERS_LIST_ID}" class="answers-list">
       <div id="${TOP_ANSWERS_LIST_ID}" class="sub-answer-list"></div>

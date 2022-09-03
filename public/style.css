@@ -76,6 +76,7 @@ body {
 .bold-text {
   font-family: "Arvo", sans-serif;
   font-weight: bold;
+  margin-bottom: 50px;
 }
 
 .green {
@@ -173,6 +174,11 @@ img {
 .answer-text {
   margin-left: 5px;
 }
+
+.question {
+  font-size: 21px;
+}
+
 
 .blink {
   animation: blinker 1s infinite;
