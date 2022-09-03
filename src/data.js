@@ -18,87 +18,56 @@ export const quizData = {
   // the questions in the quiz
   questions: [
     {
-      text: 'Click the best synonym for constitution:',
+      text: 'Choose the best synonym for Constitution:',
       answers: {
-        A: 'system of laws',
-        B: 'card games',
-        C: 'faraway galaxy',
+        A: 'System of Laws',
+        B: 'Card Games',
+        C: 'Faraway Galaxy',
+        D: 'Weather Forecast'
       },
       correct: 'A',
       selected: null,
     },
     {
-      text: 'Click the best synonym for resort:',
+      text: 'Choose the best synonym for resort:',
       answers: {
-        A: 'empty room',
-        B: 'vacation place',
-        C: 'jungle',
-        D: 'tunnel',
+        A: 'Empty Room',
+        B: 'Vacation Rental',
+        C: 'Jungle',
+        D: 'Tunnel',
       },
       correct: 'B',
       selected: null,
-      links: [
-        {
-          text: 'javascript.info',
-          href: 'https://javascript.info/types#type-typeof',
-        },
-        {
-          text: 'MDN',
-          href:
-            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof',
-        },
-      ],
     },
     {
-      text: 'Click the best synonym for sophisticated:',
+      text: 'Choose the best synonym for Sophisticated:',
       answers: {
-        A: 'strong',
-        B: 'cheap',
-        C: 'experienced',
-        D: 'true',
+        A: 'Strong',
+        B: 'Cheap',
+        C: 'Experienced',
+        D: 'True',
       },
       correct: 'C',
       selected: null,
-      links: [
-        {
-          text: 'javascript.info',
-          href: 'https://javascript.info/types#type-typeof',
-        },
-        {
-          text: 'MDN',
-          href:
-            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof',
-        },
-      ],
     },
     {
       text: 'Click the best synonym for corridor:',
       answers: {
-        A: 'passage',
-        B: 'symbol',
-        C: 'exit',
-        D: 'rust',
+        A: 'Passage',
+        B: 'Symbol',
+        C: 'Exit',
+        D: 'Rust',
       },
       correct: 'A',
       selected: null,
-      links: [
-        {
-          text: 'javascript.info',
-          href: 'https://javascript.info/types#type-typeof',
-        },
-        {
-          text: 'MDN',
-          href:
-            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof',
-        },
-      ],
     },
     {
       text: 'Click the best synonym for bid:',
       answers: {
-        A: 'offer',
-        B: 'stamp',
-        C: 'portray',
+        A: 'Offer',
+        B: 'Stamp',
+        C: 'Portray',
+        D: 'Donate',
       },
       correct: 'A',
       selected: null,
@@ -106,10 +75,10 @@ export const quizData = {
     {
       text: 'Click the best synonym for mention:',
       answers: {
-        A: 'oppose',
-        B: 'create',
-        C: 'create',
-        D: 'refer to',
+        A: 'Oppose',
+        B: 'Create',
+        C: 'Duplicate',
+        D: 'Refer to',
       },
       correct: 'D',
       selected: null,
@@ -117,10 +86,10 @@ export const quizData = {
     {
       text: 'Click the best synonym for guidance:',
       answers: {
-        A: 'principal',
-        B: 'advice',
-        C: 'create',
-        D: 'refer to',
+        A: 'Principal',
+        B: 'Advice',
+        C: 'Create',
+        D: 'Refer to',
       },
       correct: 'B',
       selected: null,
@@ -128,10 +97,10 @@ export const quizData = {
     {
       text: 'Click the best synonym for nervous:',
       answers: {
-        A: 'principal',
-        B: 'advice',
-        C: 'worried',
-        D: 'refer to',
+        A: 'Principal',
+        B: 'Advice',
+        C: 'Worried',
+        D: 'Refer to',
       },
       correct: 'C',
       selected: null,
@@ -139,10 +108,10 @@ export const quizData = {
     {
       text: 'Click the best synonym for succeed',
       answers: {
-        A: 'principal',
-        B: 'achieve',
-        C: 'worried',
-        D: 'refer to',
+        A: 'Principal',
+        B: 'Achieve',
+        C: 'Worried',
+        D: 'Refer to',
       },
       correct: 'B',
       selected: null,
@@ -150,10 +119,10 @@ export const quizData = {
     {
       text: 'Click the best synonym for vision',
       answers: {
-        A: 'principal',
-        B: 'sight',
-        C: 'worried',
-        D: 'refer to',
+        A: 'Principal',
+        B: 'Sight',
+        C: 'Worried',
+        D: 'Refer to',
       },
       correct: 'B',
       selected: null,

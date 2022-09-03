@@ -42,21 +42,34 @@ export const initQuestionPage = () => {
   );
 
   for (const [key, answerText] of Object.entries(currentQuestion.answers)) {
+    const wrongAnswer = document.getElementById('wrong-answer');
+    const correctAnswer = document.getElementById('correct-answer');
     const answerElement = createAnswerElement(key, answerText);
     answerElement.addEventListener('click', function () {
       currentQuestion.selected = key;
 
       if (key == currentQuestion.correct) {
         showScore();
-        document.getElementById(`answer-${key}`).firstElementChild.className =
-          'correct';
+        document
+          .getElementById(`answer-${key}`)
+          .classList.add('green', 'blink');
+        correctAnswer.play();
+        document
+          .getElementById(`answer-${key}`)
+          .firstElementChild.classList.add('correct');
       } else {
+        document.getElementById(`answer-${key}`).classList.add('red');
+        wrongAnswer.play();
+        document
+          .getElementById(`answer-${currentQuestion.correct}`)
+          .classList.add('green', 'blink');
         //If wrong answer is chosen, two options will be colored,red and green
-        document.getElementById(`answer-${key}`).firstElementChild.className =
-          'wrong';
-        document.getElementById(
-          `answer-${currentQuestion.correct}`
-        ).firstElementChild.className = 'correct';
+        document
+          .getElementById(`answer-${key}`)
+          .firstElementChild.classList.add('wrong');
+        document
+          .getElementById(`answer-${currentQuestion.correct}`)
+          .firstElementChild.classList.add('correct');
       }
       //After clicking all list elements will be blocked
       for (const element of document.getElementsByClassName('answer')) {
