@@ -13,10 +13,17 @@ export const initReviewPage = () => {
   const element = document.createElement('div');
 
   element.innerHTML = `<h1>Quiz is completed </h1>
-    <h3> You got ${getNumberOfCorrectAnswers()} of ${
+    <h3> You got ${getNumberOfCorrectAnswers()} out of ${
     quizData.questions.length
-  } question correct </h3>
-  <h4>To see feedback on your answers, please click below button!</h4>
+  } questions correct </h3>`
+  if (getNumberOfCorrectAnswers() <= 3) {
+      element.innerHTML += `<h3>That was pretty Bad!</h4>`
+    } else if (getNumberOfCorrectAnswers() < 6) {
+      element.innerHTML += `<h3>That was Average!</h4>`
+  } else {
+    element.innerHTML += `<h3>You are a Pro!</h4>`
+    }
+  element.innerHTML += `<p>To see feedback on your answers, please click below button!</p>
   <button id="${GO_TO_FEEDBACK_PAGE_BUTTON_ID}">
       Go to Summary
     </button>
