@@ -25,7 +25,7 @@ export const createQuestionElement = (question) => {
     quizData.questions.length
   }</div>
 
-    <h1>${quizData.currentQuestionIndex + 1}-${question}</h1>
+    <h1 class="question-text">${quizData.currentQuestionIndex + 1}-${question}</h1>
 
     <div id="${ANSWERS_LIST_ID}" class="answers-list">
       <div id="${TOP_ANSWERS_LIST_ID}" class="sub-answer-list"></div>

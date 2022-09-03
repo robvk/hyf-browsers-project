@@ -32,8 +32,11 @@ export const initQuestionPage = () => {
   countDown(() => {
     nextQuestion();
   });
+  //This is main div for options A,B,C,D
   const answersListElement = document.getElementById(ANSWERS_LIST_ID);
+  //Only option A,B go into this div
   const topAnswersListElement = document.getElementById(TOP_ANSWERS_LIST_ID);
+  //Only option C,D go into this div
   const bottomAnswersListElement = document.getElementById(
     BOTTOM_ANSWERS_LIST_ID
   );
@@ -45,14 +48,17 @@ export const initQuestionPage = () => {
 
       if (key == currentQuestion.correct) {
         showScore();
-        document.getElementById(`answer-${key}`).classList.add('green');
+        document.getElementById(`answer-${key}`).firstElementChild.className =
+          'correct';
       } else {
-        document.getElementById(`answer-${key}`).classList.add('red');
-        document
-          .getElementById(`answer-${currentQuestion.correct}`)
-          .classList.add('green');
+        //If wrong answer is chosen, two options will be colored,red and green
+        document.getElementById(`answer-${key}`).firstElementChild.className =
+          'wrong';
+        document.getElementById(
+          `answer-${currentQuestion.correct}`
+        ).firstElementChild.className = 'correct';
       }
-
+      //After clicking all list elements will be blocked
       for (const element of document.getElementsByClassName('answer')) {
         element.classList.add('disable');
       }
