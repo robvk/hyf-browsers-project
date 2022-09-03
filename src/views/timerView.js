@@ -2,8 +2,8 @@ import { TIMER_ID } from '../constants.js';
 import { quizData } from '../data.js';
 
 export const countDown = (callback) => {
-  let timer = 15;
-  const warningAudio = document.getElementById('warning-sound')
+  let timer = 20;
+  const warningAudio = document.getElementById('warning-sound');
 
   function timeDown() {
     const timerDiv = document.getElementById(TIMER_ID);
@@ -21,7 +21,7 @@ export const countDown = (callback) => {
     if (timer < 10) {
       timerDiv.style.background = 'red';
       document.getElementById(TIMER_ID).classList.add('blink');
-      warningAudio.play()
+      warningAudio.play();
     }
   }
 
