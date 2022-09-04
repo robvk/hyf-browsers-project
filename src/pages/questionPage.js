@@ -10,7 +10,7 @@ import {
 import { createQuestionElement } from '../views/questionView.js';
 import { createAnswerElement } from '../views/answerView.js';
 import { quizData } from '../data.js';
-import { initReviewPage } from './reviewPage.js';
+import { initReviewPage } from './reviewpage.js';
 import { countDown } from '../views/timerView.js';
 import { showScore } from '../views/scoreView.js';
 
@@ -85,7 +85,6 @@ export const initQuestionPage = () => {
       bottomAnswersListElement.appendChild(answerElement);
     }
   }
-
 
   document
     .getElementById(NEXT_QUESTION_BUTTON_ID)
